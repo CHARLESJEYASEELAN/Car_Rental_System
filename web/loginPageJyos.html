@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<!--
+Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+Click nbfs://nbhost/SystemFileSystem/Templates/JSP_Servlet/Html.html to edit this template
+-->
+<html>
+    <head>
+        <title>Login Form</title>
+        <style>
+            body {
+                background-image: url('https://images.unsplash.com/photo-1542242476-5a3565835a38?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Mnx8cm9hZHxlbnwwfHwwfHw%3D&w=1000&q=80');
+                background-size: cover;
+                background-position: center;
+                font-family: Arial, sans-serif;
+            }
+            .form{
+                width: 250px;
+                height: 350px;
+                background:linear-gradient(to top, rgba(0,0,0,0.8)50%,rgba(0,0,0,0.8)50%);
+                max-width: 400px;
+                margin: 100px auto;
+                padding: 20px;
+                border-radius: 5px;
+            }
+            .form h2{
+                width: 220px;
+                font-family:sans-serif;
+                text-align: center;
+                color:rgb(149, 38, 55);
+                font-size :22px;
+                background-color: white;
+                border-radius: 10px;
+                margin: 2px;
+                padding: 8px;
+            }
+            #textfield{
+                width: 240px;
+                height: 35px;
+                background:transparent;
+                border-bottom: 1px solid rgb(174, 56, 56);
+                border-top: none;
+                border-right:none;
+                border-left: none;
+                color:wheat;
+                font-size: 15px;
+                letter-spacing: 1px;
+                margin-top:30px;
+                font-family:sans-serif;
+            }
+            .form input:focus{
+                outline:none;
+            }
+            ::placeholder{
+                color:wheat;
+                font-family: Arial;
+            }
+            .btn{
+                width:250px;
+                height:40px;
+                background-color:rgb(76, 104, 146);
+                border: 2px solid rgb(174, 56, 56);
+                margin-top:19px;
+                color:white;
+                font-size:16px;
+                border-bottom-right-radius: 5px;
+                border-bottom-right-radius: 5px;
+                transition-property: background-color;
+                transition-timing-function: ease-in;
+                transition-duration: 200ms;
+                transition-delay: 0s;
+            }
+            .btn:hover{
+                background-color: rgb(8, 41, 89);
+                
+            }
+            .btn:focus {
+                outline:none;
+                background-color: rgb(100, 20, 20);
+            }
+            .btnn{
+                width:240px;
+                height:40px;
+                background: orangered;
+                border:none;
+                margin-top: 30px;
+                font-size: 18px;
+                border-radius:10px;
+                cursor:pointer;
+                color:wheat;
+            }
+            .btnn:hover{
+                background: wheat;
+                color: orangered;
+            }
+            .btnn a{
+                text-decoration: none;
+                color: wheat;
+                font-weight:bold;
+            }
+            .form .link{
+                font-family:Arial, Helvetica, sans-serif;
+                font-size: 17px;
+                padding-top:20px;
+                text-align: center;
+                color: wheat;
+            }
+            .form .link a{
+                text-decoration: none;
+                color:rgb(176, 67, 67);
+            }
+            .liw{
+                padding-top: 15px;
+                padding-bottom: 10px;
+                text-align:center;
+            }
+        </style>
+    </head>
+    <body>
+        <div class ="form">
+            <form method="POST" id="mainForm" action="validate.jsp">
+                <h2>login</h2>
+                <input id="textfield" type="text" name="Username" placeholder="Enter UserName here">
+                <input id="textfield" type="password" name="Password" placeholder="Enter password here">
+                <input type="submit" class="btn" value="login">
+
+                <p class="link">Don't have an account<br>
+                    <a href="carSignUpTwo.html">sign up here</a></p>
+
+
+            </form>
+        </div>
+
+    </body>
+</html>

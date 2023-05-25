@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <title>Car Rental Website</title>
+  <style>
+    /* Global styles */
+
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+    }
+
+    header {
+      background-color: #080808;
+      color: rgb(231, 223, 226);
+      display: flex;
+      justify-content: space-between;
+      padding: 1rem;
+    }
+
+    header:hover {
+      color: #db214a;
+      cursor: pointer;
+    }
+
+    nav ul {
+      display: flex;
+      list-style: none;
+      margin: 0;
+      padding: 0;
+    }
+
+    nav li {
+      margin-left: 1rem;
+    }
+
+    nav a {
+      color: rgb(230, 227, 227);
+      text-decoration: none;
+    }
+
+
+    main {
+      padding: 1rem;
+    }
+
+    h2 {
+      margin-top: 0;
+    }
+
+    ul {
+      list-style: none;
+      margin: 0;
+      padding: 0;
+    }
+
+    li {
+      border: 1px solid #f1efef;
+      margin-bottom: 1rem;
+      padding: 1rem;
+    }
+
+    li h3 {
+      margin-top: 0;
+    }
+
+    img {
+      max-width: 100%;
+    }
+
+    .rent-button {
+      background-color: #db214a;
+      border: none;
+      color: rgb(0, 0, 0);
+      cursor: pointer;
+      padding: 0.5rem;
+    }
+
+    .rent-button:hover {
+      background-color: rgb(236, 0, 39);
+    }
+
+    .car1 {
+      float: right;
+      width: 40%;
+      font-family: 'Poppins';
+      font: size 22px;
+
+    }
+
+    .car2 {
+      float: right;
+      width: 40%;
+      font-family: 'Poppins';
+      font: size 22px;
+    }
+
+    .car3 {
+      float: right;
+      width: 40%;
+      font-family: 'Poppins';
+      font: size 22px;
+    }
+
+    .grid-container {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      grid-template-rows: repeat(3, 1fr);
+      gap: 10px;
+    }
+
+    .item {
+      background-color: #ddd;
+      padding: 20px;
+      text-align: center;
+    }
+
+    .footer {
+      margin-top: 0%;
+      padding-bottom: 90%;
+      padding-left: 10%;
+    }
+  </style>
+</head>
+
+<body>
+  <header>
+    <h1>AMBLE CARS</h1>
+    <nav>
+      <ul>
+        <li><a href="#">Home</a></li>
+        <li><a href="#">About</a></li>
+        <li><a href="#">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+  <main>
+    <section id="search">
+      <h2>Need a Car here you go Amblinggg!!!</h2>
+      <form><b>
+          <label for="location">Location:</label>
+          <input type="text" id="location" name="location">
+          <label for="date">Date:</label>
+          <input type="date" id="date" name="date">
+          <button type="submit">Search</button></b>
+      </form>
+    </section>
+    <section id="results">
+      <h2>Results</h2>
+      <ul>
+        <li>
+          <h3>Car 1: AMBLE CAR</h3>
+          <img src="car1.jpg" alt="Car 1" height="900" width="900">
+          <p class="car1"><b>A taxi car is a type of vehicle used for transportation of passengers, typically for short
+              to medium distances.
+              Taxis can be hailed on the street or booked in advance through a mobile app or a phone call. They are
+              equipped with meters to
+              calculate fares based on distance and time, and often accept payment in cash or via card. Taxis may have
+              additional features such as
+              air conditioning, GPS navigation, and security cameras to ensure the safety and comfort of passengers.
+              They are a convenient and efficient mode
+              of transportation
+              for both personal and business use.</b></p>
+          <p>
+            4.88
+            (67 Trips)
+            Audi A4 2017
+            Automatic
+            Diesel
+            5 Seats</p>
+
+        </li>
+        <li>
+          <h3>Car 2:AMBLE VAN</h3>
+          <img src="car2.jpg" alt="Car 2" width="900">
+          <p class="car2"><b>A taxi van, also known as a minivan taxi of our Amble, is a larger type of taxi designed to
+              transport more passengers or larger items.
+              They typically have a higher roof and more spacious interior compared to regular taxis. Taxi vans are
+              often used for group transportation
+              such as airport transfers or for families with a lot of luggage. They are equipped with similar features
+              as regular taxis, such as meters
+              and GPS navigation, and may have additional amenities like air conditioning and extra storage space.
+              Taxi vans are a practical option for those who require more space and comfort for their travels.</p>
+          </b>
+          <p>
+            4.21
+            (21 Trips)
+            Mahindra XUV500 2018
+            Automatic
+            Diesel
+            7 Seats</p>
+
+        </li>
+        <li>
+          <h3>Car 3:AMBLE JEEP</h3>
+          <img src="car3.jpg" alt="Car 3" width="900">
+          <p class="car3"><b>A taxi jeep, also known as a jeepney, is a type of public transportation commonly found in
+              the Amble.
+              Jeepneys are often colorfully decorated and feature ornate designs, making them a popular icon of Amble
+              culture. They typically have an open-air design and bench
+              seating that can accommodate up to 20 passengers. Jeepneys operate on set routes and are a popular mode of
+              transportation for locals and tourists alike.
+              They are often considered a cheap and convenient way to get around cities and towns in the Philippines and
+              throughout the world.</p>
+          </b>
+          <p>
+
+            4.24
+            (11 Trips)
+            Mahindra Thar 2021
+            Manual
+            Diesel
+            4 Seats</p>
+
+        </li>
+      </ul>
+      <p><b>
+          <center>UNMATCHED BENEFITS<br><br>
+            Drive everywhere with freedom</center>
+        </b>
+      <div class="grid-container">
+        <div class="item">ZERO TOLL CHARGES
+          <img src="toll.jpg" alt="Car 3" width="900">
+        </div>
+        <div class="item">ZERO SECURITY CHARGES
+          <img src="key.jpg" alt="Car 3" width="900">
+        </div>
+        <div class="item">ENJOY UNLIMITED TRAVEL
+          <img src="tra.jpg" alt="Car 3" width="900" height="800">
+        </div>
+
+      </div>
+
+      </p>
+    </section>
+
+  </main>
+  <footer>
+    <p>
+      <center>&copy;2023 Car Rental Website</center>
+    </p>
+  </footer>
+
+</body>
+
+</html>

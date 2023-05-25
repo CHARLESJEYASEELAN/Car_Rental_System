@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>gallery</title>
+        <style>
+            .uni{
+                margin:0;
+                padding: 0;
+                font-family: 'poppins' sans-serif;
+                box-sizing: border-box;
+            }
+            .container{
+                height: 100vh;
+                width: 100%;
+                background: #c0addc;
+                display: flex;
+                align-items: center;
+                justify-content:center ;
+            }
+            .gallery{
+                display: flex;
+                align-items: center;
+                justify-content: center;
+
+            }
+            .img-box{
+                width:200px;
+                height: 500px;
+                margin: 10px;
+                border-radius: 50px;
+                background:url(g1.jpg);
+                background-size: cover;
+                background-position: center;
+                transition: width 0.5s;
+            }
+            .img-box:hover{
+                width: 300px;
+                cursor:pointer;
+            }
+            .img-box:nth-child(2){
+                background: url(g2.jpg);
+                background-size: cover;
+                background-position: center;
+            }
+            .img-box:nth-child(3){
+                background: url(g3.jpg);
+                background-size: cover;
+                background-position: center;
+            }
+            .img-box h3{
+                color: #fff;
+                position: absolute;
+                bottom: 0;
+                left:30px;
+                opacity: 0;
+                transition: bottom 0.5s,opacity 0.5s;
+
+            }
+            .img-box:hover h3{
+                opacity: 1;
+                bottom: 25px;
+
+
+            }
+
+        </style>
+    </head>
+    <body class="uni">
+
+        <div class="container">
+            <div class="gallery">
+                <div class="img-box"><h3>G1</h3></div>
+                <div class="img-box"><h3>G2</h3></div>
+                <div class="img-box"><h3>G3</h3></div>
+            </div>
+        </div>
+    </body>
+</html>

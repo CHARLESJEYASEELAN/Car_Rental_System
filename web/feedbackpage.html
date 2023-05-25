@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+        <style>
+            *{
+                margin:0;
+                padding: 0%;
+                font-family: 'poppins',sans-serif;
+                box-sizing: border-box;
+                outline: none;
+                color: #fff;
+            }
+            section{
+                position: absolute;
+                height: 100%;
+                width: 100%;
+                background: url(feedpg.jpg);
+                background-size: cover;
+                background-position:center ;
+                filter: blur(2px) brightness(50%);
+
+            }
+            body{
+                display: flex;
+                min-height: 100vh;
+                align-items: center;
+                align-items: center;
+                justify-content: center;
+            }
+            .container{
+                width: 360px;
+                background: #000;
+                box-shadow: 0 0 8px rgba(250,250,250,0.6);
+                opacity: 0.6;
+            }
+            .container form{
+                width: 100%;
+                text-align: center;
+                padding:25px 20px ;
+            }
+            form h1{
+                padding: 10px 0;
+            }
+            form.id{
+                position: relative;
+            }
+            .id i{
+                position: absolute;
+                font-size: 20px;
+                top: 50%;
+                right: 20px;
+                transform: translate(-50%);
+            }
+            form input{
+                width: 100%;
+                height: 50px;
+                margin: 4px 0;
+                border: 1px solid #5c5c5c;
+                border-radius: 3px;
+                background: #181717;
+                padding: 0 15px;
+                padding-right: 45px;
+                font-size: 20px;
+            }
+            form textarea{
+                padding: 5px 15px;
+                border: 1px solid #5c5c5c;
+                border-radius: 3px;
+                background: #181717;
+                font-size: 20px;
+                width: 100%;
+                margin: 4px;
+            }
+            form button{
+                margin-top: 5px;
+                border: none;
+                background: #00fff0;
+                color:#222;
+                padding: 10px 0 ;
+                width: 100%;
+                font-size: 20px;
+                font-weight: 800;
+                cursor: pointer;
+                border-radius: 3px;
+
+            }
+            form input:focus,
+            form textarea:focus{
+                border: 1px solid #00fff0;
+                color:#00fff0;
+                transition: all 0.3s ease;
+
+            }
+            form input:focus::placeholder,
+            form textarea:focus::placeholder{
+                padding-left: 4px;
+                color:#00fff0;
+                transition: all 0.3s ease;
+
+            }
+            form input:focus + i{
+                color:#00fff0;
+                transition: all 0.3s ease;
+
+            }
+        </style>
+    </head>
+    <body>
+        <section></section>
+        <div class="container">
+            <form>
+                <H1>GIVE YOUR FEEDBACK</H1>
+                <div class="user">
+                    <input type="text" placeholder="FULL NAME:">
+                    <div class="id">
+                        <input type="email" placeholder="EMAIL ADDRESS:">
+                    </div>
+                </div>
+                <textarea cols="15" rows="5" placeholder="Enter your opinions here...."></textarea>
+                <button onclick="popUp()">SEND</button>
+                <button class="redirectButton" onclick="location.href='LandingPageOne.jsp'">Wanna Ride Again</button>
+            </form>
+        </div>
+    </body>
+    <script>
+        function popUp(){
+            window.alert("Thanks for the FeedBack");
+            
+        }
+    </script>
+</html>

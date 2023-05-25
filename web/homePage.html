@@ -1,0 +1,398 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Document</title>
+    <style>
+        body {
+            margin: 0;
+
+        }
+
+        .imgDiv {
+
+            background-image: url("behindBackground.jpg");
+
+            min-height: 380px;
+
+
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+
+            height: 500px;
+            position: relative;
+            box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+        }
+
+
+        .container {
+
+            margin: 0px;
+
+        }
+
+
+        .topNav {
+
+
+            gap: 0px;
+
+            padding: 1%;
+            overflow: hidden;
+            background-color: rgba(255, 255, 255, 0.61);
+            width: 98%;
+
+        }
+
+
+        .topNav a {
+
+            float: right;
+            color: #f2f2f2;
+            text-align: center;
+            padding: 14px 16px;
+            text-decoration: none;
+            font-size: 17px;
+        }
+
+        .topNav a:hover {
+            background-color: #ddd;
+            color: black;
+        }
+
+
+
+
+
+        ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            overflow: hidden;
+
+        }
+
+        .buClass {
+
+            display: block;
+            color: black;
+            text-align: center;
+            padding: 14px 16px;
+            margin: 0.75%;
+            text-decoration: none;
+            float: left;
+            width: 7%;
+
+            background-color: rgba(221, 221, 221, 0);
+            font-family: 'Poppins';
+            font-size: 13px;
+            border: 2px solid black;
+            border-radius: 10px 10px 10px 10px;
+            transition-property: background-color, color, box-shadow, border-radius;
+            transition-duration: 400ms;
+            transition-delay: 0s;
+            transition-timing-function: ease-in-out;
+
+        }
+
+        .buClass:hover {
+            background-color: black;
+            color: white;
+            box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+            border-radius: 23px 21px 120px 25px;
+
+        }
+
+        li a {
+            display: block;
+            color: white;
+            text-align: center;
+            padding: 14px 16px;
+            text-decoration: none;
+        }
+
+        h1 {
+            position: absolute;
+            margin-left: 4%;
+            margin-top: 9.5%;
+            font-family: 'Poppins';
+            font-size: 55px;
+
+        }
+
+        #breakOne {
+            position: absolute;
+            border: 2px solid black;
+            width: 44%;
+            left: 4%;
+            top: 65%;
+            box-shadow: 1px 1px 1px 1px;
+        }
+
+        h4 {
+            position: absolute;
+            font-family: 'Poppins Light';
+            font-size: 25px;
+            width: 40%;
+            left: 25.5%;
+            top: 67%;
+        }
+
+        .contentDiv {
+            position: absolute;
+            border: 0px solid black;
+            display: grid;
+            top: 90%;
+            grid-gap: 26.5%;
+            grid-template-columns: repeat(3, 10%);
+            grid-auto-rows: 0fr;
+
+            padding: 2%;
+            margin-left: 0%;
+        }
+
+        .contentDivTwo {
+            position: absolute;
+            border: 0px solid black;
+            display: grid;
+            top: 155%;
+            grid-gap: 15%;
+            grid-template-columns: repeat(3, 30%);
+            grid-auto-rows: 0fr;
+
+            padding: 2%;
+            margin-left: 11%;
+        }
+        .contentDivThree {
+            position: absolute;
+            border: 0px solid black;
+            display: grid;
+            top: 225%;
+            grid-gap: 15%;
+            grid-template-columns: repeat(3, 30%);
+            grid-auto-rows: 0fr;
+
+            padding: 2%;
+            margin-left: 11%;
+        }
+
+        .Image {
+            width: 440px;
+            height: 250px;
+
+            border: 2px solid rgb(79, 78, 78);
+            transition-property: box-shadow, transform;
+            transition-duration: 0.2s;
+            transition-delay: 0s;
+            transition-timing-function: ease-in;
+        }
+
+        .Image:hover {
+            box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px,
+                rgba(0, 0, 0, 0.22) 0px 15px 12px;
+            transform: translateY(-5%);
+        }
+
+        #subHeading {
+            position: absolute;
+            text-align: center;
+            top: 55%;
+            left: 32%;
+            font-family: 'Poppins';
+            font-size: 35px;
+
+        }
+
+        #belSubHeading {
+            position: absolute;
+            text-align: center;
+            top: 80%;
+            left: 28.5%;
+            font-family: 'Poppins Light';
+            font-size: 20px;
+
+        }
+        #subHeadingThree {
+            position: absolute;
+            text-align: center;
+            top: 194%;
+            left: 35%;
+            font-family: 'Poppins';
+            font-size: 35px;
+            
+
+        }
+
+        h6 {
+            position: absolute;
+
+            top: 132%;
+            left: 20%;
+            font-family: 'Poppins Light';
+            font-size: 15px;
+        }
+
+        .last {
+            position: absolute;
+            top: 300%;
+            border-style: 2px solid white;
+
+            font-family: 'poppins', sans-serif;
+            background-color: rgba(0, 0, 0, 0.719);
+            color-scheme: white;
+            color: white;
+            justify-content: center;
+            padding-top: 4%;
+            padding-left: 2%;
+            padding-right: 2%;
+            padding-bottom: 3%;
+            align-items: center;
+            text-align: center;
+        }
+
+        #imageblock1 {
+            
+            margin-top: 2%;
+            width: 304px;
+            padding-left: 2%;
+            box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px,
+                rgba(0, 0, 0, 0.22) 0px 15px 12px;
+            transition-property: transform;
+            transition-duration: 0.2s;
+            transition-delay: 0s;
+            transition-timing-function: ease-in;
+        }
+
+        #imageblock1:hover {
+            transform: translateY(-5%);
+        }
+        #imageblock2 {
+            
+            margin-top: 2%;
+            width: 304px;
+            padding-left: 2%;
+            box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px,
+                rgba(0, 0, 0, 0.22) 0px 15px 12px;
+            transition-property: transform;
+            transition-duration: 0.2s;
+            transition-delay: 0s;
+            transition-timing-function: ease-in;
+        }
+
+        #imageblock2:hover {
+            transform: translateY(-5%);
+        }
+
+        figcaption {
+            font-family: "Poppins";
+            padding-bottom: 3.5%;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="imgDiv">
+        <div class="container">
+            <div class="topNav">
+
+                <ul>
+                    <button class="buClass" onclick="location.href='homePage.html';">Home</button>
+                    <button class="buClass" onclick="location.href='loginPageJyos.html';">Login</button>
+                    <button class="buClass" onclick="location.href='carSignUpTwo.html';">Signup</button>
+                    <button style="float:right" class="buClass">About</button>
+                </ul>
+
+            </div>
+            <h1>Welcome to Amble Cars</h1>
+            <hr id="breakOne">
+            <h4>Here you go ambling...!!</h4>
+        </div>
+    </div>
+    <h1 id="subHeading">Enjoy our Best Services</h1>
+    <h5 id="belSubHeading">We try always to intensify our security to provide you rides with safety</h5>
+    <div class="contentDiv">
+        <div class="Image">
+            <img class="img1" src="audiImg.jpg" alt="Car 1" height="250" width="440">
+        </div>
+        <div class="Image">
+            <img class="img1" src="jeepImg.jpg" alt="Car 1" height="250" width="440">
+        </div>
+        <div class="Image">
+            <img class="img1" src="vanImgTwo.jpg" alt="Car 1" height="250" width="440">
+        </div>
+
+    </div>
+    <div class="contentDivTwo">
+        <div id="imageblock1" class="slideUpCaption">
+            <img src="toll.jpg" alt="skies" height="300" width="300" id="imag1" class="hoveringEffect" />
+            <div>
+                <figcaption align="center">Zero Toll Charges</figcaption>
+            </div>
+        </div>
+        <div id="imageblock1" class="slideUpCaption">
+            <img src="key.jpg" alt="skies" height="300" width="300" id="imag1" class="hoveringEffect" />
+            <div>
+                <figcaption align="center">Zero Security Charges</figcaption>
+            </div>
+        </div>
+        <div id="imageblock1" class="slideUpCaption">
+            <img src="tra1.jpg" alt="skies" height="300" width="300" id="imag1" class="hoveringEffect" />
+            <div>
+                <figcaption align="center">Cancellation before 24 hours</figcaption>
+            </div>
+        </div>
+    </div>
+    <h1 id="subHeadingThree">"Our Testimonials"</h1>
+    <div class="contentDivThree">
+        <div id="imageblock1" class="slideUpCaption">
+            <img src="tm1.jpg" alt="skies" height="400" width="300" id="imag1" class="hoveringEffect" />
+            <div>
+                <figcaption align="center"><q>"Flattered with availability of well maintained cars"</q></figcaption>
+            </div>
+        </div>
+        <div id="imageblock1" class="slideUpCaption">
+            <img src="tm2.jpg" alt="skies" height="400" width="300" id="imag1" class="hoveringEffect" />
+            <div>
+                <figcaption align="center"><q>Booked a XUV with unlimited kms, very happy with Amblecar's service</q></figcaption>
+            </div>
+        </div>
+        <div id="imageblock1" class="slideUpCaption">
+            <img src="tm3.jpg" alt="skies" height="400" width="300" id="imag1" class="hoveringEffect" />
+            <div>
+                <figcaption align="center"><q>Most trustable car rental. Looking forward to using Amblecar again</q></figcaption>
+            </div>
+        </div>
+    </div>
+    <h6 align="center">
+        <q>Traveling is a brutality. It forces you to trust strangers and to lose sight of all that familiar comfort of
+            home and friends.
+            <br> You are constantly off balance. Nothing is yours except the essential things: air, sleep, dreams, sea,
+            the sky <br> all things tending towards the eternal or what we imagine of it.</q>
+    </h6>
+    <p class="last">The car travel company provides safe and reliable transportation services to customers. Our
+        fleet of vehicles includes sedans, SUVs, and vans, with experienced drivers to ensure a comfortable journey for
+        all
+        passengers.
+        Cancellation of trip benefits in our company refers to the policy that allows customers to receive a full or
+        partial
+        refund if they cancel their travel plans due to unforeseen circumstances,
+        such as illness or emergencies. This benefit provides peace of mind to customers and can increase loyalty to the
+        company.
+        Cancellation of trip benefits in our company refers to the policy that allows customers to receive a full or
+        partial
+        refund if they cancel their travel plans due to unforeseen circumstances,
+        such as illness or emergencies. This benefit provides peace of mind to customers and can increase loyalty to the
+        company.
+        Toll-free charges during travel refer to the fees that
+        are waived for vehicles on toll roads or bridges. This allows for faster travel and reduced congestion for
+        drivers,
+        without incurring additional costs.</p><br>
+    <p>
+
+
+
+</body>
+
+</html>
