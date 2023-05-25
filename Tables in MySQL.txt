@@ -1,0 +1,17 @@
+1. Users Table
+
+CREATE TABLE Users(  
+    Name VARCHAR(20),age VARCHAR(20),Dob VARCHAR(20),Phone VARCHAR(25),Username varchar(40),Password varchar(40)
+);
+
+2. Transports Table
+
+CREATE TABLE Transports(  
+    Name VARCHAR(20),Type VARCHAR(20),Number VARCHAR(20),Seats VARCHAR(25),Available varchar(40),Cost_per_day varchar(40),Status varchar(20)
+);
+
+3. Bookings Table
+
+CREATE TABLE Bookings(  
+    FirstName VARCHAR(20),LastName VARCHAR(20),Phone VARCHAR(25),Email varchar(40),Street_City varchar(40),Pincode varchar(10),AadharNo varchar(40),Car varchar(20),from varchar(20), to varchar(20)
+);
